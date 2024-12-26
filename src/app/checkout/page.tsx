@@ -1,6 +1,5 @@
 "use client"
 import { useState } from 'react';
-import { cn } from '@/lib/utils'; // Utility function for conditional classes from shadcn
 
 export default function CheckoutForm() {
   const [paymentMethod, setPaymentMethod] = useState('bank');

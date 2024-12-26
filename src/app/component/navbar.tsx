@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { FiSearch, FiHeart, FiUser, FiShoppingCart } from 'react-icons/fi';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
-import Image from 'next/image';
 
 const Navbar: React.FC = () => {
   return (
@@ -50,18 +49,3 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar;
-
-// Tailwind CSS Configurations (tailwind.config.js)
-// Extend theme to include the gold color used in the logo
-module.exports = {
-  theme: {
-    extend: {
-      colors: {
-        gold: '#D4AF37',
-      },
-    },
-  },
-};
-
-// Responsive Adjustments for Mobile (CSS handled via Tailwind)
-// To make the navbar responsive, the 'hidden md:flex' on the navigation links ensures they are visible only on medium and larger screens. Add mobile-specific logic if needed, e.g., a hamburger menu.
